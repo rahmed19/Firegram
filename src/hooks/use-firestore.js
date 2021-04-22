@@ -11,8 +11,10 @@ export default function UseFirestore(collection) {
                 snapshot.forEach(doc => {
                     documents.push({...doc.data(), id: doc.id})
                 })
+
                 setDocs(documents)
-            })
+                
+             })
 
         return () => unsub()
     }, [collection])
