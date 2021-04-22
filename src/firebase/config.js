@@ -4,7 +4,7 @@ import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyDSUWsrpm99FHu0Z0R5c3f0fj09j30KKYg",
+  apiKey: process.env.REACT_API_KEY_FIREGRAM,
   authDomain: "firegram-264d4.firebaseapp.com",
   projectId: "firegram-264d4",
   storageBucket: "firegram-264d4.appspot.com",
